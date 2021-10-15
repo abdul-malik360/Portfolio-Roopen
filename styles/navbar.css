@@ -1,0 +1,32 @@
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  justify-content: flex-end;
+  /* align-items: center; */
+
+  position: fixed;
+  top: 0;
+
+  height: 50px;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 50px;
+
+  font-family: sans-serif;
+  list-style-type: none;
+  text-transform: uppercase;
+  gap: 50px;
+
+  background-color: transparent;
+}
+
+.navbar-link {
+  color: #fff9;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navbar-link:hover {
+  border-bottom: 1px solid white;
+  color: white;
+}

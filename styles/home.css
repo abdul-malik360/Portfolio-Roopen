@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 2px black solid; */
+  font-family: Helvetica;
+}
+
+body {
+  background-image: url("/images/IMG-20211014-WA0017.jpg");
+  /* radial-gradient(#bdc3c7, #2c3e50); */
+  background-blend-mode: soft-light;
+  height: 100vh;
+}
+
+.head {
+  color: white;
+  font-size: 35px;
+  font-style: italic;
+  position: fixed;
+  top: 0;
+}
+
+.headspan {
+  color: white;
+
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 50px;
+}
+
+.magic {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffff;
+  margin: 50px;
+  font-family: Helvetica !important;
+  text-shadow: 20px 10px 7px black;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  /* background-color: blue; */
+  height: 100%;
+  margin: 50px;
+}
+
+.image-tag {
+  color: #ffff;
+  font-size: 25px;
+}
+
+.about-myself {
+  width: 50%;
+  /* border: black solid 2px; */
+  margin: 3px;
+
+  background-image: url("/images/aboutme.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* background-attachment: local; */
+  height: 50vh;
+}
+
+.portfolio {
+  width: 45%;
+  /* border: black solid 2px; */
+  margin: 3px;
+  background-image: url("/images/flaming\ eyes.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+.shop {
+  width: 30%;
+  /* border: black solid 2px; */
+  margin: 4px;
+  background-image: url("/images/hoodie\ Back.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40vh;
+  gap: 20px;
+}
+
+.hire-me {
+  width: 30%;
+  /* border: black solid 2px; */
+  margin: 4px;
+  background-image: url("/images/jewelry.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.insta {
+  width: 30%;
+  /* border: black solid 2px; */
+  margin: 4px;
+  background-image: url("/images/insta.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  align-self: center;
+  height: 40vh;
+}
