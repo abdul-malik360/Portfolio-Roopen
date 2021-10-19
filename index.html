@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME</title>
 
+    <link rel="stylesheet" href="/styles/navhome.css" />
     <link rel="stylesheet" href="/styles/home.css" />
-    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/modal.css" />
 
     <script
       src="https://kit.fontawesome.com/ab6051d3ab.js"
@@ -16,10 +17,11 @@
   </head>
   <body>
     <section class="home">
-      <nav class="navbar">
+      <nav id="navbar">
         <ul class="navbar-links">
+          <h2 class="head">ETHEREAL<span class="headspan">FUNGUS</span></h2>
           <li>
-            <a href="/index.html" class="navbar-link">HOME </a>
+            <a href="/index.html" class="navbar-link another-class">HOME </a>
           </li>
           <li>
             <a href="/about.html" class="navbar-link">ABOUT </a>
@@ -31,21 +33,24 @@
             <a href="/shop.html" class="navbar-link">MERCHANDISE </a>
           </li>
           <li>
-            <a href="/contact.html" class="navbar-link">CONTACT </a>
+            <a
+              href="#"
+              class="navbar-link contact"
+              onclick="toggleModal('contact-modal')"
+              >CONTACT
+            </a>
           </li>
         </ul>
       </nav>
-
-      <h2 class="head">ETHEREAL<span class="headspan">FUNGUS</span></h2>
 
       <div class="container">
         <h1 class="magic">MAGIC IS SOMETHING YOU CREATE</h1>
 
         <div class="image-container">
-          <a href="/about.html"> </a>
-          <div href="/about.html" class="image-tag about-myself">
-            About Myself
-          </div>
+          <!-- <a href="/about.html">
+            <div class="image-tag about-myself">About Myself</div>
+          </a> -->
+          <div class="image-tag about-myself">About Myself</div>
 
           <div class="image-tag portfolio">Portfolio</div>
 
@@ -57,7 +62,69 @@
             <!-- <i class="icon fab fa-instagram"></i> -->
           </div>
         </div>
+
+        <div id="contact-modal" class="modal">
+          <div class="back-drop">
+            <div class="new-form">
+              <form class="contact-form">
+                <button
+                  onclick="toggleModal('contact-modal')"
+                  class="close-button"
+                >
+                  CLOSE
+                </button>
+
+                <h2 class="contact-head">Get in Touch</h2>
+                <p class="text">
+                  Thank you for your interest! Please fill out the form below if
+                  you would like to work together.
+                </p>
+
+                <input
+                  id="name"
+                  name="Name"
+                  class="contact-input"
+                  type="text"
+                  placeholder="Enter your name"
+                  required
+                />
+
+                <input
+                  id="reg_email"
+                  name="Email"
+                  class="contact-input"
+                  type="email"
+                  placeholder="Enter your email address"
+                  required
+                />
+
+                <textarea
+                  class="contact-input"
+                  placeholder="What are your project details..."
+                  name="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <button class="send-button">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <footer>
+        <div>
+          <button>contact me</button>
+        </div>
+      </footer>
     </section>
+
+    <script src="/scripts/modal.js"></script>
+    <script>
+      function toggleModal(modalID) {
+        console.log("works");
+        document.getElementById(modalID).classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

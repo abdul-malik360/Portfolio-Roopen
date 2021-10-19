@@ -1,30 +1,30 @@
+@font-face {
+  src: url(/Fonts/Helvetica/helvetica-rounded-bold-5871d05ead8de.otf);
+  font-family: test1;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 2px black solid; */
-  font-family: Helvetica;
 }
 
+.magic {
+  font-family: test1;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffff;
+  /* margin: 50px; */
+
+  text-shadow: 20px 10px 7px black;
+}
+.test2 {
+  font-family: ;
+}
 body {
   background-image: url("/images/IMG-20211014-WA0017.jpg");
-  /* radial-gradient(#bdc3c7, #2c3e50); */
   background-blend-mode: soft-light;
   height: 100vh;
-}
-
-.head {
-  color: white;
-  font-size: 35px;
-  font-style: italic;
-  position: fixed;
-  top: 0;
-}
-
-.headspan {
-  color: white;
-
-  font-weight: bold;
 }
 
 .container {
@@ -34,30 +34,32 @@ body {
   align-items: center;
 
   margin: 50px;
-}
 
-.magic {
-  font-size: 50px;
-  font-weight: bold;
-  color: #ffff;
-  margin: 50px;
-  font-family: Helvetica !important;
-  text-shadow: 20px 10px 7px black;
+  /* background-color: black; */
 }
 
 .image-container {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 80%;
+  width: 95%;
   /* background-color: blue; */
   height: 100%;
   margin: 50px;
+  overflow: hidden;
 }
 
 .image-tag {
   color: #ffff;
   font-size: 25px;
+  transform: scale(1);
+  transition: 0.6s;
+}
+
+.image-tag:hover {
+  transform: scale(1.1);
+  overflow: ;
 }
 
 .about-myself {
@@ -67,10 +69,11 @@ body {
 
   background-image: url("/images/aboutme.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   /* background-attachment: local; */
   height: 50vh;
+  margin-bottom: 20px;
 }
 
 .portfolio {
@@ -78,9 +81,10 @@ body {
   /* border: black solid 2px; */
   margin: 3px;
   background-image: url("/images/flaming\ eyes.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 50vh;
+  margin-bottom: 20px;
 }
 
 .shop {
@@ -88,7 +92,7 @@ body {
   /* border: black solid 2px; */
   margin: 4px;
   background-image: url("/images/hoodie\ Back.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 40vh;
   gap: 20px;
@@ -107,10 +111,7 @@ body {
   width: 30%;
   /* border: black solid 2px; */
   margin: 4px;
-  background-image: url("/images/insta.png");
-  background-size: cover;
+  background-image: url("/images/jewelry.png");
+  background-size: contain;
   background-repeat: no-repeat;
-  font-size: 15px;
-  align-self: center;
-  height: 40vh;
 }

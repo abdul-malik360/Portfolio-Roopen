@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 2px black solid; */
+  font-family: Helvetica;
+}
+
+body {
+  /* background-image: url("/images/IMG-20211014-WA0017.jpg"); */
+  /* background-blend-mode: soft-light;
+  height: 100vh; */
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* margin: 50px; */
+
+  /* background-color: black; */
+  height: 100vh;
+  background-image: url("/images/flaming\ eyes.png");
+  /* background-repeat: no-repeat; */
+  width: 100vw;
+  background-size: contain;
+}
+
+img {
+}
