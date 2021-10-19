@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/styles/navhome.css" />
     <link rel="stylesheet" href="/styles/home.css" />
     <link rel="stylesheet" href="/styles/modal.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
 
     <script
       src="https://kit.fontawesome.com/ab6051d3ab.js"
@@ -19,7 +20,12 @@
     <section class="home">
       <nav id="navbar">
         <ul class="navbar-links">
-          <h2 class="head">ETHEREAL<span class="headspan">FUNGUS</span></h2>
+          <a href="/index.html" class="navbar-link another-class"
+            ><h2 class="head">
+              ETHEREAL<span class="headspan">FUNGUS</span>
+            </h2></a
+          >
+
           <li>
             <a href="/index.html" class="navbar-link another-class">HOME </a>
           </li>
@@ -47,10 +53,13 @@
         <h1 class="magic">MAGIC IS SOMETHING YOU CREATE</h1>
 
         <div class="image-container">
-          <!-- <a href="/about.html">
-            <div class="image-tag about-myself">About Myself</div>
-          </a> -->
-          <div class="image-tag about-myself">About Myself</div>
+          <li class="image-tag about-myself">
+            <a href="/index.html" class="navbar-link another-class"
+              >About Myself 2
+            </a>
+          </li>
+
+          <!-- <div class="image-tag about-myself">About Myself</div> -->
 
           <div class="image-tag portfolio">Portfolio</div>
 
@@ -58,15 +67,17 @@
 
           <div class="image-tag hire-me">Hire Me</div>
 
-          <div class="image-tag insta">
-            <!-- <i class="icon fab fa-instagram"></i> -->
-          </div>
+          <div class="image-tag insta">insta</div>
         </div>
 
         <div id="contact-modal" class="modal">
           <div class="back-drop">
             <div class="new-form">
-              <form class="contact-form">
+              <form
+                action="https://formspree.io/f/mrgrvelv"
+                method="POST"
+                class="contact-form"
+              >
                 <button
                   onclick="toggleModal('contact-modal')"
                   class="close-button"
@@ -105,26 +116,32 @@
                   cols="30"
                   rows="10"
                 ></textarea>
-                <button class="send-button">Send</button>
+                <button type="submit" class="send-button">Send</button>
               </form>
             </div>
           </div>
         </div>
       </div>
 
-      <footer>
-        <div>
-          <button>contact me</button>
-        </div>
+      <footer class="footer">
+        <button
+          class="footer-contact-btn"
+          onclick="toggleModal('contact-modal')"
+        >
+          contact me<i class="fas fa-palette"></i>
+        </button>
+
+        <a href="/index.html" class="navbar-link another-class"
+          ><h2 class="head">
+            ETHEREAL<span class="headspan">FUNGUS</span
+            ><i class="fas fa-paint-brush"></i></h2
+        ></a>
+        <a href="https://www.instagram.com/ethereal_fungus/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
       </footer>
     </section>
 
     <script src="/scripts/modal.js"></script>
-    <script>
-      function toggleModal(modalID) {
-        console.log("works");
-        document.getElementById(modalID).classList.toggle("active");
-      }
-    </script>
   </body>
 </html>

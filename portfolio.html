@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="/styles/navbar.css" />
 
     <link rel="stylesheet" href="/styles/portfolio.css" />
+
+    <link rel="stylesheet" href="/styles/modal.css" />
   </head>
   <body>
-    <nav class="navbar">
+    <nav id="navbar">
       <ul class="navbar-links">
+        <a href="/index.html" class="navbar-link another-class"
+          ><h2 class="head">ETHEREAL<span class="headspan">FUNGUS</span></h2></a
+        >
+
         <li>
           <a href="/index.html" class="navbar-link">HOME </a>
         </li>
@@ -28,7 +34,12 @@
           <a href="/shop.html" class="navbar-link">MERCHANDISE </a>
         </li>
         <li>
-          <a href="/contact.html" class="navbar-link">CONTACT </a>
+          <a
+            href="#"
+            class="navbar-link contact"
+            onclick="toggleModal('contact-modal')"
+            >CONTACT
+          </a>
         </li>
       </ul>
     </nav>
@@ -36,6 +47,59 @@
     <section class="portfolio">
       <h1>Portfolio</h1>
       <!-- <img src="/images/long ethereal.png" alt="" /> -->
+      <div id="contact-modal" class="modal">
+        <div class="back-drop">
+          <div class="new-form">
+            <form
+              action="https://formspree.io/f/mrgrvelv"
+              method="POST"
+              class="contact-form"
+            >
+              <button
+                onclick="toggleModal('contact-modal')"
+                class="close-button"
+              >
+                CLOSE
+              </button>
+
+              <h2 class="contact-head">Get in Touch</h2>
+              <p class="text">
+                Thank you for your interest! Please fill out the form below if
+                you would like to work together.
+              </p>
+
+              <input
+                id="name"
+                name="Name"
+                class="contact-input"
+                type="text"
+                placeholder="Enter your name"
+                required
+              />
+
+              <input
+                id="reg_email"
+                name="Email"
+                class="contact-input"
+                type="email"
+                placeholder="Enter your email address"
+                required
+              />
+
+              <textarea
+                class="contact-input"
+                placeholder="What are your project details..."
+                name="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <button type="submit" class="send-button">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <script src="/scripts/modal.js"></script>
   </body>
 </html>

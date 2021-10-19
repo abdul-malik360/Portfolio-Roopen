@@ -1,6 +1,6 @@
 @font-face {
   src: url(/Fonts/Helvetica/helvetica-rounded-bold-5871d05ead8de.otf);
-  font-family: test1;
+  font-family: helround;
 }
 
 * {
@@ -9,22 +9,10 @@
   padding: 0;
 }
 
-.magic {
-  font-family: test1;
-  font-size: 40px;
-  font-weight: bold;
-  color: #ffff;
-  /* margin: 50px; */
-
-  text-shadow: 20px 10px 7px black;
-}
-.test2 {
-  font-family: ;
-}
 body {
   background-image: url("/images/IMG-20211014-WA0017.jpg");
-  background-blend-mode: soft-light;
   height: 100vh;
+  background-size: cover;
 }
 
 .container {
@@ -32,10 +20,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   margin: 50px;
+}
 
-  /* background-color: black; */
+.magic {
+  font-family: helround;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffff;
+  text-shadow: 20px 15px 7px black;
 }
 
 .image-container {
@@ -44,7 +37,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   width: 95%;
-  /* background-color: blue; */
+  background-color: blue;
   height: 100%;
   margin: 50px;
   overflow: hidden;
@@ -53,12 +46,13 @@ body {
 .image-tag {
   color: #ffff;
   font-size: 25px;
-  transform: scale(1);
+  transform: scale(1.1);
   transition: 0.6s;
 }
 
 .image-tag:hover {
-  transform: scale(1.1);
+  overflow: hidden;
+  transform: scale(1.2);
   overflow: ;
 }
 

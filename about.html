@@ -8,10 +8,21 @@
 
     <link rel="stylesheet" href="/styles/navbar.css" />
     <link rel="stylesheet" href="/styles/about.css" />
+    <link rel="stylesheet" href="/styles/modal.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+
+    <script
+      src="https://kit.fontawesome.com/ab6051d3ab.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav class="navbar">
+    <nav id="navbar">
       <ul class="navbar-links">
+        <a href="/index.html" class="navbar-link another-class"
+          ><h2 class="head">ETHEREAL<span class="headspan">FUNGUS</span></h2></a
+        >
+
         <li>
           <a href="/index.html" class="navbar-link">HOME </a>
         </li>
@@ -25,36 +36,113 @@
           <a href="/shop.html" class="navbar-link">MERCHANDISE </a>
         </li>
         <li>
-          <a href="/contact.html" class="navbar-link">CONTACT </a>
+          <a
+            href="#"
+            class="navbar-link contact"
+            onclick="toggleModal('contact-modal')"
+            >CONTACT
+          </a>
         </li>
       </ul>
     </nav>
     <section class="about">
-      <div class="head">
-        <h1>about me</h1>
+      <div class="topdiv">
+        <h1>ABOUT ME</h1>
       </div>
-      <div class="bio">
-        <h2>Nishaat Williams</h2>
-        <p>
-          Throughout my life art has been a calling. I first explored this
-          calling with photography, doing freelance work as a wedding and baby
-          photographer. After matriculating I foolishly decided that
-          architecture is the only viable career with artistic aspects worth
-          pursuing.
-        </p>
-        <br />
-        <p>
-          Not long after, I discovered my love for animation and am now in my
-          second year at The Animation School. Not only have I delved into the
-          art of animation, I have also explored and became engrossed in the
-          digital art medium. I now do freelance work as a digital artist while
-          I complete my studies.
-        </p>
+      <div class="bio-container">
+        <div class="bio">
+          <h2>Nishaat Williams</h2>
+          <p>
+            Throughout my life art has been a calling. I first explored this
+            calling with photography, doing freelance work as a wedding and baby
+            photographer. After matriculating I foolishly decided that
+            architecture is the only viable career with artistic aspects worth
+            pursuing.
+          </p>
+          <br />
+          <p>
+            Not long after, I discovered my love for animation and am now in my
+            second year at The Animation School. Not only have I delved into the
+            art of animation, I have also explored and became engrossed in the
+            digital art medium. I now do freelance work as a digital artist
+            while I complete my studies.
+          </p>
 
-        <img src="/images/jewelry.png" alt="" />
+          <!-- <img src="/images/jewelry.png" alt="" /> -->
+        </div>
       </div>
 
-      <footer></footer>
+      <div id="contact-modal" class="modal">
+        <div class="back-drop">
+          <div class="new-form">
+            <form
+              action="https://formspree.io/f/mrgrvelv"
+              method="POST"
+              class="contact-form"
+            >
+              <button
+                onclick="toggleModal('contact-modal')"
+                class="close-button"
+              >
+                CLOSE
+              </button>
+
+              <h2 class="contact-head">Get in Touch</h2>
+              <p class="text">
+                Thank you for your interest! Please fill out the form below if
+                you would like to work together.
+              </p>
+
+              <input
+                id="name"
+                name="Name"
+                class="contact-input"
+                type="text"
+                placeholder="Enter your name"
+                required
+              />
+
+              <input
+                id="reg_email"
+                name="Email"
+                class="contact-input"
+                type="email"
+                placeholder="Enter your email address"
+                required
+              />
+
+              <textarea
+                class="contact-input"
+                placeholder="What are your project details..."
+                name="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <button type="submit" class="send-button">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <button
+          class="footer-contact-btn"
+          onclick="toggleModal('contact-modal')"
+        >
+          contact me<i class="fas fa-palette"></i>
+        </button>
+
+        <a href="/index.html" class="navbar-link another-class"
+          ><h2 class="head">
+            ETHEREAL<span class="headspan">FUNGUS</span
+            ><i class="fas fa-paint-brush"></i></h2
+        ></a>
+        <a href="https://www.instagram.com/ethereal_fungus/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </footer>
     </section>
+
+    <script src="/scripts/modal.js"></script>
   </body>
 </html>

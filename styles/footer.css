@@ -1,0 +1,29 @@
+@font-face {
+  src: url(/Fonts/Helvetica/helvetica-rounded-bold-5871d05ead8de.otf);
+  font-family: helround;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  /* background-color: grey; */
+  background: rgb(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.footer-contact-btn {
+  font-family: helround;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.fa-instagram {
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+}

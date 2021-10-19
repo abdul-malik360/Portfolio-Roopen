@@ -1,45 +1,45 @@
+@font-face {
+  src: url(/Fonts/Lato/Lato-Light.ttf);
+  font-family: latothin;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 2px black solid; */
-  font-family: Helvetica;
+}
+body {
+  /* background-image: url("/images/aboutme.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
 }
 
-body {
-  background-color: blue;
-  height: 300vh;
+#navbar {
+  /* background-image: url("/images/aboutme.jpg"); */
+}
+
+.topdiv {
+  /* background-color: blue; */
+  /* background-image: url("/images/aboutme.jpg"); */
+  text-align: center;
+  height: 25vh;
+  font-family: latothin;
+  color: white;
 }
 
 .navbar-link.another-class {
   color: white;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-
-  margin: 50px;
-
-  /* background-color: black; */
-}
-
-.head {
-  width: 100%;
-  /* border: black solid 2px; */
-  /* margin: 3px; */
-
-  background-image: url("/images/aboutme.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  /* background-attachment: local; */
-  height: 100vh;
-  margin-bottom: 20px;
+.bio-container {
+  background-color: white;
+  height: 60vh;
 }
 
 .bio {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  background-color: darkblue;
 }
