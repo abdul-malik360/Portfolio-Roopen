@@ -37,7 +37,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   width: 95%;
-  background-color: blue;
+  /* background-color: blue; */
   height: 100%;
   margin: 50px;
   overflow: hidden;
