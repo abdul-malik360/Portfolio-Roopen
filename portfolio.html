@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="/styles/portfolio.css" />
 
     <link rel="stylesheet" href="/styles/modal.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+
+    <script
+      src="https://kit.fontawesome.com/ab6051d3ab.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav id="navbar">
@@ -45,7 +51,7 @@
     </nav>
 
     <section class="portfolio">
-      <h1>Portfolio</h1>
+      <h1 class="port-head">My Portfolio</h1>
       <!-- <img src="/images/long ethereal.png" alt="" /> -->
       <div id="contact-modal" class="modal">
         <div class="back-drop">
@@ -98,7 +104,51 @@
           </div>
         </div>
       </div>
+
+      <div class="proj-container">
+        <img class="proj-pic" src="/images/flaming eyes.png" alt="" />
+
+        <img class="proj-pic" src="/images/jewelry.png" alt="" />
+
+        <img class="proj-pic" src="/images/long ethereal.png" alt="" />
+
+        <img class="proj-pic" src="/images/ninja gang copy.png" alt="" />
+
+        <img class="proj-pic" src="/images/skul submerged.png" alt="" />
+
+        <img class="proj-pic" src="/images/smash ramen.png" alt="" />
+
+        <img class="proj-pic" src="/images/smokey1.png" alt="" />
+
+        <img class="proj-pic" src="/images/spirited away.png" alt="" />
+
+        <img class="proj-pic" src="/images/water bubble.png" alt="" />
+      </div>
     </section>
+
+    <footer class="footer">
+      <button class="footer-contact-btn" onclick="toggleModal('contact-modal')">
+        contact me<i class="fas fa-palette"></i>
+      </button>
+
+      <a href="/index.html" class="navbar-link another-class"
+        ><h2 class="head">
+          ETHEREAL<span class="headspan">FUNGUS</span
+          ><i class="fas fa-paint-brush"></i></h2
+      ></a>
+
+      <div class="footer-icons">
+        <a
+          href="https://www.linkedin.com/in/nishaat-williams-85780a1b2/"
+          target="_blank"
+          ><i class="footer-icon fab fa-linkedin"></i
+        ></a>
+
+        <a href="https://www.instagram.com/ethereal_fungus/" target="_blank"
+          ><i class="footer-icon fab fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
 
     <script src="/scripts/modal.js"></script>
   </body>

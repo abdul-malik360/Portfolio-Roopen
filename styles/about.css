@@ -8,23 +8,22 @@
   margin: 0;
   padding: 0;
 }
-body {
-  /* background-image: url("/images/aboutme.jpg"); */
-  /* background-repeat: no-repeat; */
-  /* background-size: contain; */
-}
-
-#navbar {
-  /* background-image: url("/images/aboutme.jpg"); */
-}
 
 .topdiv {
-  /* background-color: blue; */
+  background-color: grey;
   /* background-image: url("/images/aboutme.jpg"); */
   text-align: center;
-  height: 25vh;
+  /* height: 50vh; */
   font-family: latothin;
   color: white;
+}
+
+.new-aboutbg {
+  background-image: url("/images/aboutme.jpg");
+  object-fit: cover;
+  background-size: cover;
+  height: 50vh;
+  /* z-index: 100; */
 }
 
 .navbar-link.another-class {
@@ -40,6 +39,114 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 20px auto;
   width: 80%;
-  background-color: darkblue;
+  /* background-color: darkblue; */
+}
+
+.my-name {
+  color: #333333;
+  font-family: latothin;
+  margin: 20px 0 10px;
+  font-weight: bold;
+}
+
+/* modal */
+@font-face {
+  src: url(/Fonts/Helvetica/helvetica-rounded-bold-5871d05ead8de.otf);
+  font-family: helround;
+}
+
+@font-face {
+  src: url(/Fonts/Lato/Lato-Light.ttf);
+  font-family: latothin;
+}
+
+.modal {
+  display: none;
+}
+
+.modal.active {
+  display: flex;
+  justify-content: center;
+  /* z-index: 2; */
+}
+
+.back-drop {
+  top: 0;
+  position: fixed;
+  background: rgb(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  /* z-index: -1; */
+}
+.new-form {
+  display: flex;
+  width: 500px;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.close-button {
+  color: #fff9;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  border: transparent;
+  margin: 10px;
+  transition: 0.3s;
+}
+.close-button:hover {
+  color: white;
+}
+
+.contact-head {
+  color: white;
+  margin: 5px;
+  font-family: helround;
+}
+
+.text {
+  text-align: center;
+  margin: 10px;
+  color: #fff9;
+  font-family: latothin;
+}
+
+.contact-input {
+  margin: 5px;
+  padding: 20px;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 16px;
+}
+
+.send-button {
+  display: block;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 3px;
+  background-color: rgb(85, 172, 238);
+  transition-property: background-color;
+  transition-duration: 400ms;
+  transition-timing-function: ease;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+}
+.send-button:hover {
+  background: #3765a3;
 }
