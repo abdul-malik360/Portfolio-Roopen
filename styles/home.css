@@ -11,7 +11,7 @@
 
 body {
   background-image: url("/images/IMG-20211014-WA0017.jpg");
-  height: 100vh;
+  height: 100%;
   background-size: cover;
 }
 
@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 .contain {
@@ -44,10 +44,11 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 95%;
-  background-color: blue;
+  /* background-color: blue; */
   height: 100%;
-  margin: 50px;
+  margin: 20px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .home-pic {
@@ -58,7 +59,13 @@ body {
   transform: scale(1);
   transition: 0.6s;
 }
+.home-pic.about {
+  max-width: 100%;
+}
 
+.home-pic.portfolio {
+  max-width: 100%;
+}
 .home-pic:hover {
   transform: scale(1.2);
 }

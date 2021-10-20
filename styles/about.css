@@ -32,7 +32,7 @@
 
 .bio-container {
   background-color: white;
-  height: 60vh;
+  height: 100%;
 }
 
 .bio {
@@ -42,6 +42,23 @@
   margin: 20px auto;
   width: 80%;
   /* background-color: darkblue; */
+}
+
+.bio-text {
+  width: 50%;
+  margin: 30px;
+}
+
+.bio-pic {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-pic {
+  max-width: 500px;
+  margin: 30px;
+  height: 500px;
+  object-fit: cover;
 }
 
 .my-name {
