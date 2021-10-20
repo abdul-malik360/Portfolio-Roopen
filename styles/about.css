@@ -3,10 +3,25 @@
   font-family: latothin;
 }
 
+@font-face {
+  src: url(/Fonts/Lato/Lato-Bold.woff);
+  font-family: latobold;
+}
+
+@font-face {
+  src: url(/Fonts/Helvetica/helvetica-rounded-bold-5871d05ead8de.otf);
+  font-family: helround;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.about-head {
+  font-family: helround;
+  font-size: 35px;
 }
 
 .topdiv {
@@ -47,6 +62,9 @@
 .bio-text {
   width: 50%;
   margin: 30px;
+  font-family: latothin;
+
+  font-size: 20px;
 }
 
 .bio-pic {
@@ -63,9 +81,11 @@
 
 .my-name {
   color: #333333;
-  font-family: latothin;
+  font-family: latobold;
   margin: 20px 0 10px;
   font-weight: bold;
+
+  font-size: 35px;
 }
 
 /* modal */
