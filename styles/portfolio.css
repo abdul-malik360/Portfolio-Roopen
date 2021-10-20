@@ -39,6 +39,9 @@ body {
 }
 
 .proj-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
   margin: 50px;
   height: 100%;
 }

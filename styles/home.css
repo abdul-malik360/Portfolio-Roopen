@@ -20,7 +20,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  margin: 20px;
+}
+
+.contain {
+  display: flex;
 }
 
 .magic {
@@ -36,76 +40,22 @@ body {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 95%;
-  /* background-color: blue; */
+  max-width: 95%;
+  background-color: blue;
   height: 100%;
   margin: 50px;
   overflow: hidden;
 }
 
-.image-tag {
-  color: #ffff;
-  font-size: 25px;
-  transform: scale(1.1);
+.home-pic {
+  max-width: 300px;
+
+  height: 300px;
+  object-fit: cover;
+  transform: scale(1);
   transition: 0.6s;
 }
 
-.image-tag:hover {
-  overflow: hidden;
+.home-pic:hover {
   transform: scale(1.2);
-  overflow: ;
-}
-
-.about-myself {
-  width: 50%;
-  /* border: black solid 2px; */
-  margin: 3px;
-
-  background-image: url("/images/aboutme.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  /* background-attachment: local; */
-  height: 50vh;
-  margin-bottom: 20px;
-}
-
-.portfolio {
-  width: 45%;
-  /* border: black solid 2px; */
-  margin: 3px;
-  background-image: url("/images/flaming\ eyes.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50vh;
-  margin-bottom: 20px;
-}
-
-.shop {
-  width: 30%;
-  /* border: black solid 2px; */
-  margin: 4px;
-  background-image: url("/images/hoodie\ Back.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 40vh;
-  gap: 20px;
-}
-
-.hire-me {
-  width: 30%;
-  /* border: black solid 2px; */
-  margin: 4px;
-  background-image: url("/images/jewelry.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.insta {
-  width: 30%;
-  /* border: black solid 2px; */
-  margin: 4px;
-  background-image: url("/images/jewelry.png");
-  background-size: contain;
-  background-repeat: no-repeat;
 }
