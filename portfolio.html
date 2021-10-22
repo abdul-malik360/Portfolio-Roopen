@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/styles/portfolio.css" />
 
     <link rel="stylesheet" href="/styles/modal.css" />
+    <link rel="stylesheet" href="/styles/images-modal.css" />
     <link rel="stylesheet" href="/styles/footer.css" />
 
     <script
@@ -106,23 +107,190 @@
       </div>
 
       <div class="proj-container">
-        <img class="proj-pic" src="/images/flaming eyes.png" alt="" />
+        <div class="mini-container">
+          <img
+            onclick="toggleModal('flame-eyes-modal')"
+            class="proj-pic"
+            src="/images/flaming eyes.png"
+            alt=""
+          />
+        </div>
 
-        <img class="proj-pic" src="/images/jewelry.png" alt="" />
+        <div class="mini-container">
+          <img
+            onclick="toggleModal('jewelry-modal')"
+            class="proj-pic"
+            src="/images/jewelry.png"
+            alt=""
+          />
+        </div>
 
-        <img class="proj-pic" src="/images/long ethereal.png" alt="" />
+        <div class="mini-container">
+          <img
+            onclick="toggleModal('water-fall-modal')"
+            class="proj-pic"
+            src="/images/long ethereal.png"
+            alt=""
+          />
+        </div>
 
-        <img class="proj-pic" src="/images/ninja gang copy.png" alt="" />
+        <div class="mini-container">
+          <img
+            onclick="toggleModal('ninja-modal')"
+            class="proj-pic"
+            src="/images/ninja gang copy.png"
+            alt=""
+          />
+        </div>
 
-        <img class="proj-pic" src="/images/skul submerged.png" alt="" />
+        <div class="mini-container">
+          <img
+            onclick="toggleModal('skull-modal')"
+            class="proj-pic"
+            src="/images/skul submerged.png"
+            alt=""
+          />
+        </div>
 
-        <img class="proj-pic" src="/images/smash ramen.png" alt="" />
+        <div class="mini-container">
+          <img
+            onclick="toggleModal('ramen-modal')"
+            class="proj-pic"
+            src="/images/smash ramen.png"
+            alt=""
+          />
+        </div>
 
-        <img class="proj-pic" src="/images/smokey1.png" alt="" />
+        <div class="mini-container">
+          <img
+            onclick="toggleModal('smokey-modal')"
+            class="proj-pic"
+            src="/images/smokey1.png"
+            alt=""
+          />
+        </div>
 
-        <img class="proj-pic" src="/images/spirited away.png" alt="" />
+        <div class="mini-container">
+          <img
+            onclick="toggleModal('spirit-modal')"
+            class="proj-pic"
+            src="/images/spirited away.png"
+            alt=""
+          />
+        </div>
 
-        <img class="proj-pic" src="/images/water bubble.png" alt="" />
+        <div class="mini-container">
+          <img
+            onclick="toggleModal('bubble-modal')"
+            class="proj-pic"
+            src="/images/water bubble.png"
+            alt=""
+          />
+        </div>
+
+        <!-- modal images section -->
+        <div class="modal-container">
+          <div id="flame-eyes-modal" class="pic-modal">
+            <div class="image-back-drop">
+              <img
+                onclick="toggleModal('flame-eyes-modal')"
+                class="pic"
+                src="/images/flaming eyes.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div id="jewelry-modal" class="pic-modal">
+            <div class="image-back-drop">
+              <img
+                onclick="toggleModal('jewelry-modal')"
+                id="-modal"
+                class="pic"
+                src="/images/jewelry.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div id="water-fall-modal" class="pic-modal">
+            <div class="image-back-drop">
+              <img
+                onclick="toggleModal('water-fall-modal')"
+                class="pic"
+                src="/images/long ethereal.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div id="ninja-modal" class="pic-modal">
+            <div class="image-back-drop">
+              <img
+                onclick="toggleModal('ninja-modal')"
+                class="pic"
+                src="/images/ninja gang copy.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div id="skull-modal" class="pic-modal">
+            <div class="image-back-drop">
+              <img
+                onclick="toggleModal('skull-modal')"
+                class="pic"
+                src="/images/skul submerged.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div id="ramen-modal" class="pic-modal">
+            <div class="image-back-drop">
+              <img
+                onclick="toggleModal('ramen-modal')"
+                class="pic"
+                src="/images/smash ramen.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div id="smokey-modal" class="pic-modal">
+            <div class="image-back-drop">
+              <img
+                onclick="toggleModal('smokey-modal')"
+                id="-modal"
+                class="pic"
+                src="/images/smokey1.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div id="spirit-modal" class="pic-modal">
+            <div class="image-back-drop">
+              <img
+                onclick="toggleModal('spirit-modal')"
+                class="pic"
+                src="/images/spirited away.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div id="bubble-modal" class="pic-modal">
+            <div class="image-back-drop">
+              <img
+                onclick="toggleModal('bubble-modal')"
+                class="pic"
+                src="/images/water bubble.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
