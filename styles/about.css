@@ -59,6 +59,15 @@
   /* background-color: darkblue; */
 }
 
+.my-name {
+  color: #333333;
+  font-family: latobold;
+  margin: 30px;
+  font-weight: bold;
+
+  font-size: 35px;
+}
+
 .bio-text {
   width: 50%;
   margin: 30px;
@@ -77,15 +86,6 @@
   margin: 30px;
   height: 500px;
   object-fit: cover;
-}
-
-.my-name {
-  color: #333333;
-  font-family: latobold;
-  margin: 20px 0 10px;
-  font-weight: bold;
-
-  font-size: 35px;
 }
 
 /* modal */

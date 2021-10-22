@@ -63,3 +63,14 @@
   transform: scale(1.2);
   overflow: ;
 }
+
+/* <div class="pixel"></div> */
+.pixel {
+  background-color: #ff00ff;
+  width: 1px;
+  height: 1px;
+  position: fixed;
+  top: 126px;
+  left: 242px;
+  z-index: 9999;
+}
