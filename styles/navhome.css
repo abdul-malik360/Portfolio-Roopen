@@ -8,10 +8,10 @@
   font-family: latobold;
 }
 
-@font-face {
+/* @font-face {
   src: url(/Fonts/Helvetica/helvetica-rounded-bold-5871d05ead8de.otf);
   font-family: helround;
-}
+} */
 
 .navbar-links {
   display: flex;
@@ -28,7 +28,7 @@
   padding: 50px;
   margin-bottom: 50px;
 
-  font-family: helround;
+  font-family: Helvetica;
   list-style-type: none;
   text-transform: uppercase;
   gap: 50px;
